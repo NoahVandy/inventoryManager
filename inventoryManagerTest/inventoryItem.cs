@@ -15,10 +15,10 @@ namespace inventoryManagerTest
         public int stock;
         public string color;
         public string model;
-        public string cost;
+        public double cost;
 
         //constructor
-        public inventoryItem(string id, string size, int stock, string color, string model, string cost)
+        public inventoryItem(string id, string size, int stock, string color, string model, double cost)
         {
             this.id = id;
             this.size = size;
@@ -35,57 +35,7 @@ namespace inventoryManagerTest
             return newString;
         }
 
-        public string getID()
-        {
-            string newID = this.id;
-            return newID;
-        }
 
-        public string getSize()
-        {
-            string newSize = this.size;
-            return newSize;
-        }
-        public void setSize(String newSize)
-        {
-            this.size = newSize;
-        }
-
-        public int getStock()
-        {
-            int newInt = this.stock;
-            return newInt;
-        }
-        public void setStock(int newInt)
-        {
-            this.stock = newInt;
-        }
-
-        public string getColor()
-        {
-            string newString = this.color;
-            return newString;
-        }
-        public void setColor(String newString)
-        {
-            this.color = newString;
-        }
-
-        public string getModel()
-        {
-            string newString = this.model;
-            return newString;
-        }
-        public void setModel(String newString)
-        {
-            this.model = newString;
-        }
-
-        public string getCost()
-        {
-            string newString = this.cost;
-            return newString;
-        }
 
 
 

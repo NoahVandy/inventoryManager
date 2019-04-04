@@ -12,9 +12,9 @@ namespace inventoryManagerTest
         {
             inventoryManager iv = new inventoryManager();
 
-            inventoryItem item1 = new inventoryItem("1237e", "7", 700, "Blue", "High Tops", "$70");
-            inventoryItem item2 = new inventoryItem("1238e", "8", 90821, "Red", "Low Tops", "$70");
-            inventoryItem item3 = new inventoryItem("1239e", "9", 7589732, "Orange", "Classics", "$70");
+            inventoryItem item1 = new inventoryItem("1237e", "7", 700, "Blue", "High Tops", 79.99);
+            inventoryItem item2 = new inventoryItem("1238e", "8", 90821, "Red", "Low Tops", 79.99);
+            inventoryItem item3 = new inventoryItem("1239e", "9", 7589732, "Orange", "Classics", 69.99);
 
 
             bool addCheck = iv.Add(item1);
