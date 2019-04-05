@@ -36,6 +36,25 @@ namespace inventoryManagerTest
                 Console.WriteLine("item 2 failed to add");
 
 
+            Console.WriteLine("please enter a id for the shoe");
+            string id = Console.ReadLine();
+            Console.WriteLine("please enter a shoe size for the item");
+            string size = Console.ReadLine();
+            Console.WriteLine("please enter a number for the number of units in stock");
+            int stock;
+            int.TryParse(Console.ReadLine(), out stock);
+            Console.WriteLine("please enter a color for the color of the shoe");
+            string color = Console.ReadLine();
+            Console.WriteLine("please enter a model for the model of the shoe");
+            string model = Console.ReadLine();
+            Console.WriteLine("please enter a cost for the cost of the shoe");
+            double cost;
+            Double.TryParse(Console.ReadLine(), out cost);
+
+            inventoryItem userItem = new inventoryItem(id, size, stock, color, model, cost);
+
+            Console.WriteLine("here is your new item: " + userItem.ToString());
+
 
             foreach (inventoryItem item in iv.theList)
             {
